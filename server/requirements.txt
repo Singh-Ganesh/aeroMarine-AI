@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+tensorflow
+tf-keras
+pillow
+numpy
+opencv-python-headless
+python-multipart
+httpx
+python-dotenv

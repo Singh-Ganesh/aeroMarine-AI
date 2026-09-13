@@ -1,0 +1,67 @@
+import type { AppNotification } from "../types";
+
+export const initialNotifications: AppNotification[] = [
+  {
+    id: "notif-spill-bob",
+    severity: "critical",
+    title: "New Oil Spill Detected",
+    location: "Bay of Bengal Offshore (Visakhapatnam EEZ)",
+    detail: "12.4 km² slick spreading east. Vessel MV Seabreeze near containment zone.",
+    time: "6 min ago",
+    read: false,
+    incidentId: "OS-2026-BOB-01",
+    targetSection: "live-monitor",
+    isSimulatedDemo: true,
+  },
+  {
+    id: "notif-spill-area-mum",
+    severity: "warning",
+    title: "Spill Area Increased",
+    location: "Mumbai Coast (JNPT Approach)",
+    detail: "Active surface slick expanded to 24.8 km². Tier-1 skimming deployed.",
+    time: "18 min ago",
+    read: false,
+    incidentId: "OS-2026-MUM-02",
+    targetSection: "live-monitor",
+    isSimulatedDemo: true,
+  },
+  {
+    id: "notif-vessel-seabreeze",
+    severity: "critical",
+    title: "Vessel Identified in Spill Zone",
+    location: "Visakhapatnam Sector",
+    detail: "MV Seabreeze (Tanker, IMO 8765432) tracked within 1.2 NM of active slick.",
+    time: "32 min ago",
+    read: false,
+    vesselId: "SHP-SEABREEZE",
+    targetSection: "live-monitor",
+    isSimulatedDemo: true,
+  },
+  {
+    id: "notif-spill-kutch",
+    severity: "warning",
+    title: "Critical Incident Near Sanctuary",
+    location: "Gulf of Kutch Marine Sanctuary Approach",
+    detail: "16.5 km² bunker fuel discharge drifting toward Marine National Park buffer.",
+    time: "45 min ago",
+    read: true,
+    incidentId: "OS-2026-KUTCH-03",
+    targetSection: "live-monitor",
+    isSimulatedDemo: true,
+  },
+  {
+    id: "notif-vessel-samudra",
+    severity: "info",
+    title: "Pollution Response Cutter Deployed",
+    location: "Sector Alpha Perimeter",
+    detail: "ICGS Samudra Prahari deploying offshore containment boom perimeter.",
+    time: "1 hr ago",
+    read: true,
+    vesselId: "SHP-SAMUDRA-SURAKSHA",
+    targetSection: "live-monitor",
+    isSimulatedDemo: false,
+  },
+];
+
+export const notifications = initialNotifications;
+
